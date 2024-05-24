@@ -1,0 +1,11 @@
+export { default as emailIcon } from "./email.svg";
+export { default as eyeIcon } from "./eye.svg";
+export { default as eyeCloseIcon } from "./eyeclose.svg";
+export { default as facebookIcon } from "./facebook.svg";
+export { default as githubIcon } from "./github.svg";
+export { default as googleIcon } from "./google.svg";
+export { default as hamburgerIcon } from "./hamburger.svg";
+export { default as lightIcon } from "./light.svg";
+export { default as logoIcon } from "./logo.svg";
+export { default as nightIcon } from "./night.svg";
+export { default as twitterIcon } from "./twitter.svg";

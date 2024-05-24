@@ -1,0 +1,116 @@
+{
+  "common": {
+    "add": "Add",
+    "edit": "Edit",
+    "delete": "Delete",
+    "decentralize": "Decentralize",
+    "close": "Close",
+    "save": "Save",
+    "refresh": "Refresh",
+    "accept": "Accept",
+    "confirm": "Confirm",
+    "confirm-this-task": "Are you sure to process this task?",
+    "fail-to-load-data": "Fail to load data",
+    "unknown-error": "There was an error",
+    "internal-server-error": "Internal server error",
+    "bad-request": "Bad request",
+    "forbiden-request": "Invalid input data",
+    "fail-to-load-all-code": "Fail to load data from allcode",
+    "sum": "Sum",
+    "category": "Category",
+    "tag": "Tag",
+    "user": "User",
+    "house": "House",
+    "profile": "Profile",
+    "signin": "Sign In",
+    "name_vi": "Name (Vi)",
+    "name_en": "Name (En)",
+    "description_vi": "Description (Vi)",
+    "description_en": "Description (En)",
+    "created_at": "Created At",
+    "welcome": "Welcome to Rent Room!",
+    "dashboard": "Dashboard",
+    "name": "Name",
+    "description": "Description",
+    "button": {
+      "login": "Login"
+    }
+  },
+  "message": {
+    "created": "Created!",
+    "updated": "Updated!",
+    "create_tag": "Created tag successfully",
+    "create_category": "Created category successfully"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "sign_in_with": "Sign In With",
+    "sign_in_with_credentials": "Or sign in with credentials",
+    "remember_me": "Remember Me",
+    "forgot_password": "Forgot Password",
+    "create_new_account": "Create New Account",
+    "email": "Email",
+    "password": "Password",
+    "email_placeholder": "Enter your email address",
+    "password_placeholder": "Enter your password"
+  },
+  "category": {
+    "name": "Category",
+    "table": "Category table",
+    "create": "Category create",
+    "update": "Category update",
+    "delete": "Category delete"
+  },
+  "tag": {
+    "table": "Tag table",
+    "create": "Tag create",
+    "update": "Tag update",
+    "delete": "Tag delete"
+  },
+  "house": {
+    "table": "House table",
+    "create": "House create",
+    "update": "House update",
+    "delete": "House delete"
+  },
+  "routes": {
+    "category": "Category",
+    "dashboard": "Dashboard",
+    "tag": "Tag",
+    "house": "House",
+    "icons": "Icons",
+    "user-profile": "User Profile",
+    "table": "Table",
+    "login": "Login",
+    "register": "Register",
+    "test": "Test",
+    "house_holder": "House Holder"
+  },
+  "validation": {
+    "login": {
+      "email": {
+        "required": "Email is required",
+        "max_length": "Max length 8 characters",
+        "email_regex": "Must be type of email"
+      },
+      "password": {
+        "required": "Password is required",
+        "min_length": "Min length 6 characters",
+        "max_length": "Max length 20 characters"
+      }
+    }
+  },
+  "sign_in": {
+    "do_not_have_account": "Chưa có tài khoản?",
+    "register_here": "Đăng ký ngay",
+    "email": "Email",
+    "enter_email": "Nhập vào email của bạn",
+    "password": "Mật khẩu",
+    "enter_password": "Nhập vào mật khẩu của bạn",
+    "remember_me": "Lưu tài khoản",
+    "forgot_password": "Quên mật khẩu?",
+    "sign_in": "Đăng nhập",
+    "or_continue_with": "hoặc đăng nhập với"
+  }
+}

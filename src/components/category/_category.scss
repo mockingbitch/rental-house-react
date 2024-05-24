@@ -1,0 +1,56 @@
+.swiper {
+  @mixin tablet {
+  }
+  .swiper-wrapper {
+    .slide {
+      //height: 62px;
+      width: 80px !important;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      cursor: pointer;
+      margin-right: 16px;
+      a {
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .category__box-item {
+        height: 100%;
+        position: relative;
+
+        .title {
+          display: flex;
+          justify-content: center;
+          line-height: 200%; /* 19.2px */
+          letter-spacing: -0.3px;
+          font-weight: 400;
+        }
+
+        &:hover,
+        &.isActive {
+          &::after {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: #5392F9 ;
+          }
+        }
+
+        &.isActive {
+          .header-category_item_title {
+            font-weight: 700;
+            color: #5392F9 ;
+          }
+        }
+      }
+    }
+  }
+}
