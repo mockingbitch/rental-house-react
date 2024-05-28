@@ -8,12 +8,17 @@ import SVG from 'react-inlinesvg';
 import {CategoryData} from "@/components/category/category-data.js";
 import { useTranslation } from 'react-i18next'
 import {LANG_EN} from "@/lib/constants.js";
+import {useDispatch, useSelector} from "react-redux";
+import {select} from "@/store/slices/category-slice.js";
 
 export default () => {
+    const dispatch = useDispatch();
+    const authState = useSelector((state) => state.category);
     const { i18n } = useTranslation();
     const [categories, setCategories] = useState(CategoryData);
     const modules = [Pagination, FreeMode];
     const [numberOfCategory, setNumberOfCategory] = useState(0);
+    console.log(authState)
 
     useEffect(() => {
         switch (true) {
@@ -31,6 +36,11 @@ export default () => {
         }
     }, []);
 
+    const handleClick = (item) => {
+        const action = select(item);
+        dispatch(action);
+    }
+
     return (
         <div className="category">
             <Swiper
@@ -45,7 +55,7 @@ export default () => {
                 {categories?.map((item, key) => {
                     let icon = item.icon;
                     return (
-                        <SwiperSlide key={key} className="slide mt-4 mb-2 max-height-[70px]">
+                        <SwiperSlide key={key} className="slide mt-4 mb-2 max-height-[70px]" onClick={() => handleClick(item)}>
                             <div
                                 className={clsx('category__box-item', 1 === true ? 'isActive' : '')}
                             >

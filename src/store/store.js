@@ -1,11 +1,13 @@
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
 import authReducer from '@/store/slices/auth-slice';
+import categodyReducer from '@/store/slices/category-slice';
 // import { persistReducer } from 'redux-persist';
 // import storage from 'redux-persist/lib/storage';
 import { thunk } from 'redux-thunk';
 
 const rootReducer = combineReducers({
     auth: authReducer,
+    category: categodyReducer,
 });
 
 // const persistConfig = {
