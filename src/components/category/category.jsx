@@ -13,12 +13,11 @@ import {select} from "@/store/slices/category-slice.js";
 
 export default () => {
     const dispatch = useDispatch();
-    const authState = useSelector((state) => state.category);
+    const categoryState = useSelector((state) => state.category);
     const { i18n } = useTranslation();
     const [categories, setCategories] = useState(CategoryData);
     const modules = [Pagination, FreeMode];
     const [numberOfCategory, setNumberOfCategory] = useState(0);
-    console.log(authState)
 
     useEffect(() => {
         switch (true) {
@@ -44,7 +43,7 @@ export default () => {
     return (
         <div className="category">
             <Swiper
-                className="swiper dark:bg-gray-800 rounded-xl"
+                className="swiper dark:bg-gray-800 rounded-xl mb-4"
                 spaceBetween={50}
                 slidesPerView={numberOfCategory}
                 modules={modules}
@@ -57,7 +56,7 @@ export default () => {
                     return (
                         <SwiperSlide key={key} className="slide mt-4 mb-2 max-height-[70px]" onClick={() => handleClick(item)}>
                             <div
-                                className={clsx('category__box-item', 1 === true ? 'isActive' : '')}
+                                className={clsx('category__box-item', categoryState?.selected?.id === item.id ? 'isActive' : '')}
                             >
                                 <div
                                     className="header-category_item_icon thumbContainer flex justify-center"

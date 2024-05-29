@@ -48,7 +48,7 @@ const houses = [
 
 export default () => {
     return (
-        <div className="h-full flex w-full justify-center items-center dark:bg-gray-800 p-2 mt-4">
+        <div className="h-full flex w-full justify-center items-center dark:bg-gray-800 dark:border-0 p-2 mt-4 border-slate-200 border rounded-xl">
             <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-4 md:p-2 xl:p-5">
                 { houses?.map((item, key) => {
                     return (
