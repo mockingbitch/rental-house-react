@@ -47,8 +47,8 @@ export default () => {
                 spaceBetween={50}
                 slidesPerView={numberOfCategory}
                 modules={modules}
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
+                // onSlideChange={() => console.log('slide change')}
+                // onSwiper={(swiper) => console.log(swiper)}
                 freeMode={true}
             >
                 {categories?.map((item, key) => {
@@ -63,7 +63,7 @@ export default () => {
                                 >
                                     <SVG className="fill-stone-500" src={icon} />
                                 </div>
-                                <div className="header-category_item_title title dark:text-white truncate">
+                                <div className="header-category_item_title text-sm title dark:text-white truncate">
                                     { i18n.language === LANG_EN ? item.name_en : item.name_vi }
                                 </div>
                             </div>

@@ -13,9 +13,10 @@ const App = (props) => {
                 { publicRoutes.map((publicRoute, index) => {
                     const PublicLayout = publicRoute.layout || Layout;
                     const PublicPage = publicRoute.component;
+                    const withId = publicRoute?.withId;
 
                     return (
-                        <Route key={ index } path={ publicRoute.path } element={
+                        <Route key={ index } path={ withId ? publicRoute.path + '/:id' : publicRoute.path } element={
                             <PublicLayout>
                                 <PublicPage />
                             </PublicLayout>

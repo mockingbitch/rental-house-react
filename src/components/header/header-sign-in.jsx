@@ -14,6 +14,7 @@ import NightModeButton from "@/components/button/night-mode-button";
 import SearchForm from "@/components/search/search-form.jsx";
 import SidebarContent from "@/components/menu/content/sidebar-content.jsx";
 import LanguageMode from "@/components/language/language-mode.jsx";
+import {HomeAccountMenu} from "@/components/menu/home-account-menu.jsx";
 
 const Header = () => {
     const [width, setWidth] = useState(window.innerWidth); // default width, detect on server.
@@ -34,7 +35,7 @@ const Header = () => {
                             <img src={ logoIcon } width={20} height={20} alt='Logo'/>
                             <span className="hidden font-bold sm:inline-block">Rentalhouse</span>
                         </a>
-                        <nav className="flex items-center gap-4 text-sm lg:gap-6">
+                        <nav className="flex items-center gap-4 text-base lg:gap-6">
                             <a
                                 className="transition-colors hover:text-foreground/80 text-foreground/60"
                                 href="/docs"
@@ -74,18 +75,19 @@ const Header = () => {
                             <SearchForm />
                         </div>
                         <nav className="flex items-center">
-                            <a target="_blank" rel="noreferrer" href="https://twitter.com/shadcn">
-                                <div
-                                    className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-9 py-2 w-9 px-0">
-                                    <img src={ twitterIcon } width={20} height={20} alt='Twitter'/>
-                                    <span className="sr-only">Twitter</span></div>
-                            </a>
-                            <LanguageMode/>
-                            <NightModeButton/>
+                            <div className="mx-2">
+                                <HomeAccountMenu/>
+                            </div>
+                            <div className="mx-2">
+                                <LanguageMode/>
+                            </div>
+                            <div className="mx-2">
+                                <NightModeButton/>
+                            </div>
                         </nav>
                     </div>
                 </div>
-                <Sheet key="left" />
+                <Sheet key="left"/>
             </header>
         </>
     );

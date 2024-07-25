@@ -40,7 +40,7 @@ const SignIn = () => {
             <form onSubmit={ event => event.preventDefault() }>
                 <div className="mb-12">
                     <h3 className="text-3xl font-extrabold dark:text-black">{ t('sign_in.sign_in') }</h3>
-                    <p className="text-sm mt-4 dark:text-gray-700">
+                    <p className="text-base mt-4 dark:text-gray-700">
                         { t('sign_in.do_not_have_account') }
                         <Link
                             to='/sign-up'
@@ -58,14 +58,14 @@ const SignIn = () => {
                         <Input
                             name="email"
                             type="text"
-                            className="w-full text-sm border-b border-gray-300 px-2 py-3 outline-none dark:bg-white dark:text-black"
+                            className="w-full text-base border-b border-gray-300 px-2 py-3 outline-none dark:bg-white dark:text-black"
                             placeholder={ t('sign_in.enter_email') }
                             onChange={ e => handleChange(setData, e) }
                         />
                         <img src={ emailIcon } className="w-[18px] h-[18px] absolute right-2" alt="Email icon"/>
                     </div>
                     <span
-                        className="mt-2 text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block"
+                        className="mt-2 text-base text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block"
                     >
                         {
                             Array.isArray(messageValidation?.email)
@@ -83,7 +83,7 @@ const SignIn = () => {
                         <Input
                             name="password"
                             type={ isPreviewPassword ? 'text' : 'password' }
-                            className="w-full text-sm border-b border-gray-300 px-2 py-3 outline-none dark:bg-white dark:text-black"
+                            className="w-full text-base border-b border-gray-300 px-2 py-3 outline-none dark:bg-white dark:text-black"
                             placeholder={ t('sign_in.enter_password') }
                             onChange={e => handleChange(setData, e)}
                         />
@@ -95,7 +95,7 @@ const SignIn = () => {
                         />
                     </div>
                     <span
-                        className="mt-2 text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block"
+                        className="mt-2 text-base text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block"
                     >
                         {
                             Array.isArray(messageValidation?.password)
@@ -113,14 +113,14 @@ const SignIn = () => {
                             type="checkbox"
                             className="h-4 w-4 shrink-0 text-blue-600 focus:ring-blue-500 border-gray-300 rounded dark:text-black"
                         />
-                        <Label htmlFor="remember-me" className="ml-3 block text-sm dark:text-black">
+                        <Label htmlFor="remember-me" className="ml-3 block text-base dark:text-black">
                             { t('sign_in.remember_me') }
                         </Label>
                     </div>
                     <div>
                         <a
                             href=""
-                            className="text-blue-600 font-semibold text-sm hover:underline"
+                            className="text-blue-600 font-semibold text-base hover:underline"
                         >
                             { t('sign_in.forgot_password') }
                         </a>
@@ -129,13 +129,13 @@ const SignIn = () => {
                 <div className="mt-12">
                     <Button
                         type="button"
-                        className="w-full shadow-xl py-2.5 px-4 text-sm font-semibold rounded-full text-white bg-blue-600 hover:bg-blue-700 focus:outline-none"
+                        className="w-full shadow-xl py-2.5 px-4 text-base font-semibold rounded-full text-white bg-blue-600 hover:bg-blue-700 focus:outline-none"
                         onClick={ handleLogin }
                     >
                         { t('sign_in.sign_in') }
                     </Button>
                 </div>
-                <p className="my-8 text-sm text-gray-400 text-center">
+                <p className="my-8 text-base text-gray-400 text-center">
                     { t('sign_in.or_continue_with') }
                 </p>
                 <div className="space-x-8 flex justify-center">
