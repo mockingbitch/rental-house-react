@@ -39,11 +39,11 @@ export const HomeAccountMenu = () => {
         <DropdownMenu>
             <DropdownMenuTrigger asChild>
                 <Button variant="outline">
-                    <Avatar className="h-[25px] w-[25px]">
+                    <Avatar className="h-[23px] w-[23px]">
                         <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
                         <AvatarFallback>CN</AvatarFallback>
                     </Avatar>
-                    <p className="mx-2">Phong Trần Quang</p>
+                    <p className="mx-2">Nguyens...</p>
                     {/*<CircleUserRound />*/}
                 </Button>
             </DropdownMenuTrigger>

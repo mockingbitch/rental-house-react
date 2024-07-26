@@ -75,14 +75,14 @@ const Header = () => {
                             <SearchForm />
                         </div>
                         <nav className="flex items-center">
-                            <div className="mx-2">
-                                <HomeAccountMenu/>
-                            </div>
-                            <div className="mx-2">
+                            <div className="mx-1">
                                 <LanguageMode/>
                             </div>
-                            <div className="mx-2">
+                            <div className="mx-1">
                                 <NightModeButton/>
+                            </div>
+                            <div className="ml-1">
+                                <HomeAccountMenu/>
                             </div>
                         </nav>
                     </div>
